@@ -153,7 +153,7 @@ const resetPassword = asyncHandler(async (req: express.Request, res: express.Res
             res.status(401).json({ success: false, error: 'Token has already expired' });
         } else if (!user.isVerified) {
             res.status(401).json({ success: false, error: "Your account is not verified yet" });
-        } else if (user.password === password) {
+        } else if (await user.validatePassword(password)) {
             res.status(401).json({ success: false, error: "Your new password is the same as the previous one" });
         } else {
 
