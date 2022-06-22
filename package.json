@@ -1,0 +1,32 @@
+{
+  "name": "mern-auth-app",
+  "version": "1.0.0",
+  "author": "Edison Liem",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "16.x",
+    "npm": "8.x"
+  },
+  "scripts": {
+    "frontend": "npm start --prefix frontend",
+    "backend": "npm start --prefix backend",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "heroku-prebuild": "npm install && npm install --prefix backend",
+    "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edison-lhk/mern-auth-app.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edison-lhk/mern-auth-app/issues"
+  },
+  "homepage": "https://github.com/edison-lhk/mern-auth-app#readme",
+  "devDependencies": {
+    "concurrently": "^7.2.2"
+  }
+}

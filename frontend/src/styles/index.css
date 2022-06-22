@@ -1,0 +1,856 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  position: relative;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.container .register-form, .container .login-form {
+  min-height: 540px;
+}
+
+.container .forgot-password-form, .container .reset-password-form {
+  min-height: 400px;
+}
+
+.container .verify-account-form {
+  min-height: 250px;
+}
+
+.container .register-form, .container .login-form, .container .forgot-password-form, .container .reset-password-form, .container .verify-account-form {
+  background-color: white;
+  border: 1px solid #BDBDBD;
+  border-radius: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  width: Min(470px, 80vw);
+}
+
+.container .register-form .register-container, .container .register-form .login-container, .container .register-form .forgot-password-container, .container .register-form .reset-password-container, .container .register-form .verify-account-container, .container .login-form .register-container, .container .login-form .login-container, .container .login-form .forgot-password-container, .container .login-form .reset-password-container, .container .login-form .verify-account-container, .container .forgot-password-form .register-container, .container .forgot-password-form .login-container, .container .forgot-password-form .forgot-password-container, .container .forgot-password-form .reset-password-container, .container .forgot-password-form .verify-account-container, .container .reset-password-form .register-container, .container .reset-password-form .login-container, .container .reset-password-form .forgot-password-container, .container .reset-password-form .reset-password-container, .container .reset-password-form .verify-account-container, .container .verify-account-form .register-container, .container .verify-account-form .login-container, .container .verify-account-form .forgot-password-container, .container .verify-account-form .reset-password-container, .container .verify-account-form .verify-account-container {
+  width: 80%;
+  height: 100%;
+}
+
+.container .register-form .register-container .logo-container, .container .register-form .login-container .logo-container, .container .register-form .forgot-password-container .logo-container, .container .register-form .reset-password-container .logo-container, .container .register-form .verify-account-container .logo-container, .container .login-form .register-container .logo-container, .container .login-form .login-container .logo-container, .container .login-form .forgot-password-container .logo-container, .container .login-form .reset-password-container .logo-container, .container .login-form .verify-account-container .logo-container, .container .forgot-password-form .register-container .logo-container, .container .forgot-password-form .login-container .logo-container, .container .forgot-password-form .forgot-password-container .logo-container, .container .forgot-password-form .reset-password-container .logo-container, .container .forgot-password-form .verify-account-container .logo-container, .container .reset-password-form .register-container .logo-container, .container .reset-password-form .login-container .logo-container, .container .reset-password-form .forgot-password-container .logo-container, .container .reset-password-form .reset-password-container .logo-container, .container .reset-password-form .verify-account-container .logo-container, .container .verify-account-form .register-container .logo-container, .container .verify-account-form .login-container .logo-container, .container .verify-account-form .forgot-password-container .logo-container, .container .verify-account-form .reset-password-container .logo-container, .container .verify-account-form .verify-account-container .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 7px;
+}
+
+.container .register-form .register-container .logo-container .app-logo, .container .register-form .login-container .logo-container .app-logo, .container .register-form .forgot-password-container .logo-container .app-logo, .container .register-form .reset-password-container .logo-container .app-logo, .container .register-form .verify-account-container .logo-container .app-logo, .container .login-form .register-container .logo-container .app-logo, .container .login-form .login-container .logo-container .app-logo, .container .login-form .forgot-password-container .logo-container .app-logo, .container .login-form .reset-password-container .logo-container .app-logo, .container .login-form .verify-account-container .logo-container .app-logo, .container .forgot-password-form .register-container .logo-container .app-logo, .container .forgot-password-form .login-container .logo-container .app-logo, .container .forgot-password-form .forgot-password-container .logo-container .app-logo, .container .forgot-password-form .reset-password-container .logo-container .app-logo, .container .forgot-password-form .verify-account-container .logo-container .app-logo, .container .reset-password-form .register-container .logo-container .app-logo, .container .reset-password-form .login-container .logo-container .app-logo, .container .reset-password-form .forgot-password-container .logo-container .app-logo, .container .reset-password-form .reset-password-container .logo-container .app-logo, .container .reset-password-form .verify-account-container .logo-container .app-logo, .container .verify-account-form .register-container .logo-container .app-logo, .container .verify-account-form .login-container .logo-container .app-logo, .container .verify-account-form .forgot-password-container .logo-container .app-logo, .container .verify-account-form .reset-password-container .logo-container .app-logo, .container .verify-account-form .verify-account-container .logo-container .app-logo {
+  width: 25px;
+  height: 25px;
+}
+
+.container .register-form .register-container .logo-container .app-name, .container .register-form .login-container .logo-container .app-name, .container .register-form .forgot-password-container .logo-container .app-name, .container .register-form .reset-password-container .logo-container .app-name, .container .register-form .verify-account-container .logo-container .app-name, .container .login-form .register-container .logo-container .app-name, .container .login-form .login-container .logo-container .app-name, .container .login-form .forgot-password-container .logo-container .app-name, .container .login-form .reset-password-container .logo-container .app-name, .container .login-form .verify-account-container .logo-container .app-name, .container .forgot-password-form .register-container .logo-container .app-name, .container .forgot-password-form .login-container .logo-container .app-name, .container .forgot-password-form .forgot-password-container .logo-container .app-name, .container .forgot-password-form .reset-password-container .logo-container .app-name, .container .forgot-password-form .verify-account-container .logo-container .app-name, .container .reset-password-form .register-container .logo-container .app-name, .container .reset-password-form .login-container .logo-container .app-name, .container .reset-password-form .forgot-password-container .logo-container .app-name, .container .reset-password-form .reset-password-container .logo-container .app-name, .container .reset-password-form .verify-account-container .logo-container .app-name, .container .verify-account-form .register-container .logo-container .app-name, .container .verify-account-form .login-container .logo-container .app-name, .container .verify-account-form .forgot-password-container .logo-container .app-name, .container .verify-account-form .reset-password-container .logo-container .app-name, .container .verify-account-form .verify-account-container .logo-container .app-name {
+  color: #282051;
+  font-size: 14px;
+}
+
+.container .register-form .register-container h3, .container .register-form .login-container h3, .container .register-form .forgot-password-container h3, .container .register-form .reset-password-container h3, .container .register-form .verify-account-container h3, .container .login-form .register-container h3, .container .login-form .login-container h3, .container .login-form .forgot-password-container h3, .container .login-form .reset-password-container h3, .container .login-form .verify-account-container h3, .container .forgot-password-form .register-container h3, .container .forgot-password-form .login-container h3, .container .forgot-password-form .forgot-password-container h3, .container .forgot-password-form .reset-password-container h3, .container .forgot-password-form .verify-account-container h3, .container .reset-password-form .register-container h3, .container .reset-password-form .login-container h3, .container .reset-password-form .forgot-password-container h3, .container .reset-password-form .reset-password-container h3, .container .reset-password-form .verify-account-container h3, .container .verify-account-form .register-container h3, .container .verify-account-form .login-container h3, .container .verify-account-form .forgot-password-container h3, .container .verify-account-form .reset-password-container h3, .container .verify-account-form .verify-account-container h3 {
+  font-size: 18px;
+}
+
+.container .register-form .register-container .register-description, .container .register-form .register-container .forgot-password-description, .container .register-form .register-container .reset-password-description, .container .register-form .register-container .resend-email-description, .container .register-form .login-container .register-description, .container .register-form .login-container .forgot-password-description, .container .register-form .login-container .reset-password-description, .container .register-form .login-container .resend-email-description, .container .register-form .forgot-password-container .register-description, .container .register-form .forgot-password-container .forgot-password-description, .container .register-form .forgot-password-container .reset-password-description, .container .register-form .forgot-password-container .resend-email-description, .container .register-form .reset-password-container .register-description, .container .register-form .reset-password-container .forgot-password-description, .container .register-form .reset-password-container .reset-password-description, .container .register-form .reset-password-container .resend-email-description, .container .register-form .verify-account-container .register-description, .container .register-form .verify-account-container .forgot-password-description, .container .register-form .verify-account-container .reset-password-description, .container .register-form .verify-account-container .resend-email-description, .container .login-form .register-container .register-description, .container .login-form .register-container .forgot-password-description, .container .login-form .register-container .reset-password-description, .container .login-form .register-container .resend-email-description, .container .login-form .login-container .register-description, .container .login-form .login-container .forgot-password-description, .container .login-form .login-container .reset-password-description, .container .login-form .login-container .resend-email-description, .container .login-form .forgot-password-container .register-description, .container .login-form .forgot-password-container .forgot-password-description, .container .login-form .forgot-password-container .reset-password-description, .container .login-form .forgot-password-container .resend-email-description, .container .login-form .reset-password-container .register-description, .container .login-form .reset-password-container .forgot-password-description, .container .login-form .reset-password-container .reset-password-description, .container .login-form .reset-password-container .resend-email-description, .container .login-form .verify-account-container .register-description, .container .login-form .verify-account-container .forgot-password-description, .container .login-form .verify-account-container .reset-password-description, .container .login-form .verify-account-container .resend-email-description, .container .forgot-password-form .register-container .register-description, .container .forgot-password-form .register-container .forgot-password-description, .container .forgot-password-form .register-container .reset-password-description, .container .forgot-password-form .register-container .resend-email-description, .container .forgot-password-form .login-container .register-description, .container .forgot-password-form .login-container .forgot-password-description, .container .forgot-password-form .login-container .reset-password-description, .container .forgot-password-form .login-container .resend-email-description, .container .forgot-password-form .forgot-password-container .register-description, .container .forgot-password-form .forgot-password-container .forgot-password-description, .container .forgot-password-form .forgot-password-container .reset-password-description, .container .forgot-password-form .forgot-password-container .resend-email-description, .container .forgot-password-form .reset-password-container .register-description, .container .forgot-password-form .reset-password-container .forgot-password-description, .container .forgot-password-form .reset-password-container .reset-password-description, .container .forgot-password-form .reset-password-container .resend-email-description, .container .forgot-password-form .verify-account-container .register-description, .container .forgot-password-form .verify-account-container .forgot-password-description, .container .forgot-password-form .verify-account-container .reset-password-description, .container .forgot-password-form .verify-account-container .resend-email-description, .container .reset-password-form .register-container .register-description, .container .reset-password-form .register-container .forgot-password-description, .container .reset-password-form .register-container .reset-password-description, .container .reset-password-form .register-container .resend-email-description, .container .reset-password-form .login-container .register-description, .container .reset-password-form .login-container .forgot-password-description, .container .reset-password-form .login-container .reset-password-description, .container .reset-password-form .login-container .resend-email-description, .container .reset-password-form .forgot-password-container .register-description, .container .reset-password-form .forgot-password-container .forgot-password-description, .container .reset-password-form .forgot-password-container .reset-password-description, .container .reset-password-form .forgot-password-container .resend-email-description, .container .reset-password-form .reset-password-container .register-description, .container .reset-password-form .reset-password-container .forgot-password-description, .container .reset-password-form .reset-password-container .reset-password-description, .container .reset-password-form .reset-password-container .resend-email-description, .container .reset-password-form .verify-account-container .register-description, .container .reset-password-form .verify-account-container .forgot-password-description, .container .reset-password-form .verify-account-container .reset-password-description, .container .reset-password-form .verify-account-container .resend-email-description, .container .verify-account-form .register-container .register-description, .container .verify-account-form .register-container .forgot-password-description, .container .verify-account-form .register-container .reset-password-description, .container .verify-account-form .register-container .resend-email-description, .container .verify-account-form .login-container .register-description, .container .verify-account-form .login-container .forgot-password-description, .container .verify-account-form .login-container .reset-password-description, .container .verify-account-form .login-container .resend-email-description, .container .verify-account-form .forgot-password-container .register-description, .container .verify-account-form .forgot-password-container .forgot-password-description, .container .verify-account-form .forgot-password-container .reset-password-description, .container .verify-account-form .forgot-password-container .resend-email-description, .container .verify-account-form .reset-password-container .register-description, .container .verify-account-form .reset-password-container .forgot-password-description, .container .verify-account-form .reset-password-container .reset-password-description, .container .verify-account-form .reset-password-container .resend-email-description, .container .verify-account-form .verify-account-container .register-description, .container .verify-account-form .verify-account-container .forgot-password-description, .container .verify-account-form .verify-account-container .reset-password-description, .container .verify-account-form .verify-account-container .resend-email-description {
+  font-size: 16px;
+  text-align: start;
+}
+
+.container .register-form .register-container .register-description .resend-email-link, .container .register-form .register-container .forgot-password-description .resend-email-link, .container .register-form .register-container .reset-password-description .resend-email-link, .container .register-form .register-container .resend-email-description .resend-email-link, .container .register-form .login-container .register-description .resend-email-link, .container .register-form .login-container .forgot-password-description .resend-email-link, .container .register-form .login-container .reset-password-description .resend-email-link, .container .register-form .login-container .resend-email-description .resend-email-link, .container .register-form .forgot-password-container .register-description .resend-email-link, .container .register-form .forgot-password-container .forgot-password-description .resend-email-link, .container .register-form .forgot-password-container .reset-password-description .resend-email-link, .container .register-form .forgot-password-container .resend-email-description .resend-email-link, .container .register-form .reset-password-container .register-description .resend-email-link, .container .register-form .reset-password-container .forgot-password-description .resend-email-link, .container .register-form .reset-password-container .reset-password-description .resend-email-link, .container .register-form .reset-password-container .resend-email-description .resend-email-link, .container .register-form .verify-account-container .register-description .resend-email-link, .container .register-form .verify-account-container .forgot-password-description .resend-email-link, .container .register-form .verify-account-container .reset-password-description .resend-email-link, .container .register-form .verify-account-container .resend-email-description .resend-email-link, .container .login-form .register-container .register-description .resend-email-link, .container .login-form .register-container .forgot-password-description .resend-email-link, .container .login-form .register-container .reset-password-description .resend-email-link, .container .login-form .register-container .resend-email-description .resend-email-link, .container .login-form .login-container .register-description .resend-email-link, .container .login-form .login-container .forgot-password-description .resend-email-link, .container .login-form .login-container .reset-password-description .resend-email-link, .container .login-form .login-container .resend-email-description .resend-email-link, .container .login-form .forgot-password-container .register-description .resend-email-link, .container .login-form .forgot-password-container .forgot-password-description .resend-email-link, .container .login-form .forgot-password-container .reset-password-description .resend-email-link, .container .login-form .forgot-password-container .resend-email-description .resend-email-link, .container .login-form .reset-password-container .register-description .resend-email-link, .container .login-form .reset-password-container .forgot-password-description .resend-email-link, .container .login-form .reset-password-container .reset-password-description .resend-email-link, .container .login-form .reset-password-container .resend-email-description .resend-email-link, .container .login-form .verify-account-container .register-description .resend-email-link, .container .login-form .verify-account-container .forgot-password-description .resend-email-link, .container .login-form .verify-account-container .reset-password-description .resend-email-link, .container .login-form .verify-account-container .resend-email-description .resend-email-link, .container .forgot-password-form .register-container .register-description .resend-email-link, .container .forgot-password-form .register-container .forgot-password-description .resend-email-link, .container .forgot-password-form .register-container .reset-password-description .resend-email-link, .container .forgot-password-form .register-container .resend-email-description .resend-email-link, .container .forgot-password-form .login-container .register-description .resend-email-link, .container .forgot-password-form .login-container .forgot-password-description .resend-email-link, .container .forgot-password-form .login-container .reset-password-description .resend-email-link, .container .forgot-password-form .login-container .resend-email-description .resend-email-link, .container .forgot-password-form .forgot-password-container .register-description .resend-email-link, .container .forgot-password-form .forgot-password-container .forgot-password-description .resend-email-link, .container .forgot-password-form .forgot-password-container .reset-password-description .resend-email-link, .container .forgot-password-form .forgot-password-container .resend-email-description .resend-email-link, .container .forgot-password-form .reset-password-container .register-description .resend-email-link, .container .forgot-password-form .reset-password-container .forgot-password-description .resend-email-link, .container .forgot-password-form .reset-password-container .reset-password-description .resend-email-link, .container .forgot-password-form .reset-password-container .resend-email-description .resend-email-link, .container .forgot-password-form .verify-account-container .register-description .resend-email-link, .container .forgot-password-form .verify-account-container .forgot-password-description .resend-email-link, .container .forgot-password-form .verify-account-container .reset-password-description .resend-email-link, .container .forgot-password-form .verify-account-container .resend-email-description .resend-email-link, .container .reset-password-form .register-container .register-description .resend-email-link, .container .reset-password-form .register-container .forgot-password-description .resend-email-link, .container .reset-password-form .register-container .reset-password-description .resend-email-link, .container .reset-password-form .register-container .resend-email-description .resend-email-link, .container .reset-password-form .login-container .register-description .resend-email-link, .container .reset-password-form .login-container .forgot-password-description .resend-email-link, .container .reset-password-form .login-container .reset-password-description .resend-email-link, .container .reset-password-form .login-container .resend-email-description .resend-email-link, .container .reset-password-form .forgot-password-container .register-description .resend-email-link, .container .reset-password-form .forgot-password-container .forgot-password-description .resend-email-link, .container .reset-password-form .forgot-password-container .reset-password-description .resend-email-link, .container .reset-password-form .forgot-password-container .resend-email-description .resend-email-link, .container .reset-password-form .reset-password-container .register-description .resend-email-link, .container .reset-password-form .reset-password-container .forgot-password-description .resend-email-link, .container .reset-password-form .reset-password-container .reset-password-description .resend-email-link, .container .reset-password-form .reset-password-container .resend-email-description .resend-email-link, .container .reset-password-form .verify-account-container .register-description .resend-email-link, .container .reset-password-form .verify-account-container .forgot-password-description .resend-email-link, .container .reset-password-form .verify-account-container .reset-password-description .resend-email-link, .container .reset-password-form .verify-account-container .resend-email-description .resend-email-link, .container .verify-account-form .register-container .register-description .resend-email-link, .container .verify-account-form .register-container .forgot-password-description .resend-email-link, .container .verify-account-form .register-container .reset-password-description .resend-email-link, .container .verify-account-form .register-container .resend-email-description .resend-email-link, .container .verify-account-form .login-container .register-description .resend-email-link, .container .verify-account-form .login-container .forgot-password-description .resend-email-link, .container .verify-account-form .login-container .reset-password-description .resend-email-link, .container .verify-account-form .login-container .resend-email-description .resend-email-link, .container .verify-account-form .forgot-password-container .register-description .resend-email-link, .container .verify-account-form .forgot-password-container .forgot-password-description .resend-email-link, .container .verify-account-form .forgot-password-container .reset-password-description .resend-email-link, .container .verify-account-form .forgot-password-container .resend-email-description .resend-email-link, .container .verify-account-form .reset-password-container .register-description .resend-email-link, .container .verify-account-form .reset-password-container .forgot-password-description .resend-email-link, .container .verify-account-form .reset-password-container .reset-password-description .resend-email-link, .container .verify-account-form .reset-password-container .resend-email-description .resend-email-link, .container .verify-account-form .verify-account-container .register-description .resend-email-link, .container .verify-account-form .verify-account-container .forgot-password-description .resend-email-link, .container .verify-account-form .verify-account-container .reset-password-description .resend-email-link, .container .verify-account-form .verify-account-container .resend-email-description .resend-email-link {
+  color: #039be5;
+  cursor: pointer;
+}
+
+.container .register-form .register-container .message-box, .container .register-form .login-container .message-box, .container .register-form .forgot-password-container .message-box, .container .register-form .reset-password-container .message-box, .container .register-form .verify-account-container .message-box, .container .login-form .register-container .message-box, .container .login-form .login-container .message-box, .container .login-form .forgot-password-container .message-box, .container .login-form .reset-password-container .message-box, .container .login-form .verify-account-container .message-box, .container .forgot-password-form .register-container .message-box, .container .forgot-password-form .login-container .message-box, .container .forgot-password-form .forgot-password-container .message-box, .container .forgot-password-form .reset-password-container .message-box, .container .forgot-password-form .verify-account-container .message-box, .container .reset-password-form .register-container .message-box, .container .reset-password-form .login-container .message-box, .container .reset-password-form .forgot-password-container .message-box, .container .reset-password-form .reset-password-container .message-box, .container .reset-password-form .verify-account-container .message-box, .container .verify-account-form .register-container .message-box, .container .verify-account-form .login-container .message-box, .container .verify-account-form .forgot-password-container .message-box, .container .verify-account-form .reset-password-container .message-box, .container .verify-account-form .verify-account-container .message-box {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.container .register-form .register-container .message-box p, .container .register-form .login-container .message-box p, .container .register-form .forgot-password-container .message-box p, .container .register-form .reset-password-container .message-box p, .container .register-form .verify-account-container .message-box p, .container .login-form .register-container .message-box p, .container .login-form .login-container .message-box p, .container .login-form .forgot-password-container .message-box p, .container .login-form .reset-password-container .message-box p, .container .login-form .verify-account-container .message-box p, .container .forgot-password-form .register-container .message-box p, .container .forgot-password-form .login-container .message-box p, .container .forgot-password-form .forgot-password-container .message-box p, .container .forgot-password-form .reset-password-container .message-box p, .container .forgot-password-form .verify-account-container .message-box p, .container .reset-password-form .register-container .message-box p, .container .reset-password-form .login-container .message-box p, .container .reset-password-form .forgot-password-container .message-box p, .container .reset-password-form .reset-password-container .message-box p, .container .reset-password-form .verify-account-container .message-box p, .container .verify-account-form .register-container .message-box p, .container .verify-account-form .login-container .message-box p, .container .verify-account-form .forgot-password-container .message-box p, .container .verify-account-form .reset-password-container .message-box p, .container .verify-account-form .verify-account-container .message-box p {
+  width: 90%;
+  color: white;
+}
+
+.container .register-form .register-container .message-box .close-btn, .container .register-form .login-container .message-box .close-btn, .container .register-form .forgot-password-container .message-box .close-btn, .container .register-form .reset-password-container .message-box .close-btn, .container .register-form .verify-account-container .message-box .close-btn, .container .login-form .register-container .message-box .close-btn, .container .login-form .login-container .message-box .close-btn, .container .login-form .forgot-password-container .message-box .close-btn, .container .login-form .reset-password-container .message-box .close-btn, .container .login-form .verify-account-container .message-box .close-btn, .container .forgot-password-form .register-container .message-box .close-btn, .container .forgot-password-form .login-container .message-box .close-btn, .container .forgot-password-form .forgot-password-container .message-box .close-btn, .container .forgot-password-form .reset-password-container .message-box .close-btn, .container .forgot-password-form .verify-account-container .message-box .close-btn, .container .reset-password-form .register-container .message-box .close-btn, .container .reset-password-form .login-container .message-box .close-btn, .container .reset-password-form .forgot-password-container .message-box .close-btn, .container .reset-password-form .reset-password-container .message-box .close-btn, .container .reset-password-form .verify-account-container .message-box .close-btn, .container .verify-account-form .register-container .message-box .close-btn, .container .verify-account-form .login-container .message-box .close-btn, .container .verify-account-form .forgot-password-container .message-box .close-btn, .container .verify-account-form .reset-password-container .message-box .close-btn, .container .verify-account-form .verify-account-container .message-box .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .register-form .register-container form, .container .register-form .login-container form, .container .register-form .forgot-password-container form, .container .register-form .reset-password-container form, .container .register-form .verify-account-container form, .container .login-form .register-container form, .container .login-form .login-container form, .container .login-form .forgot-password-container form, .container .login-form .reset-password-container form, .container .login-form .verify-account-container form, .container .forgot-password-form .register-container form, .container .forgot-password-form .login-container form, .container .forgot-password-form .forgot-password-container form, .container .forgot-password-form .reset-password-container form, .container .forgot-password-form .verify-account-container form, .container .reset-password-form .register-container form, .container .reset-password-form .login-container form, .container .reset-password-form .forgot-password-container form, .container .reset-password-form .reset-password-container form, .container .reset-password-form .verify-account-container form, .container .verify-account-form .register-container form, .container .verify-account-form .login-container form, .container .verify-account-form .forgot-password-container form, .container .verify-account-form .reset-password-container form, .container .verify-account-form .verify-account-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .register-form .register-container form .input-container, .container .register-form .login-container form .input-container, .container .register-form .forgot-password-container form .input-container, .container .register-form .reset-password-container form .input-container, .container .register-form .verify-account-container form .input-container, .container .login-form .register-container form .input-container, .container .login-form .login-container form .input-container, .container .login-form .forgot-password-container form .input-container, .container .login-form .reset-password-container form .input-container, .container .login-form .verify-account-container form .input-container, .container .forgot-password-form .register-container form .input-container, .container .forgot-password-form .login-container form .input-container, .container .forgot-password-form .forgot-password-container form .input-container, .container .forgot-password-form .reset-password-container form .input-container, .container .forgot-password-form .verify-account-container form .input-container, .container .reset-password-form .register-container form .input-container, .container .reset-password-form .login-container form .input-container, .container .reset-password-form .forgot-password-container form .input-container, .container .reset-password-form .reset-password-container form .input-container, .container .reset-password-form .verify-account-container form .input-container, .container .verify-account-form .register-container form .input-container, .container .verify-account-form .login-container form .input-container, .container .verify-account-form .forgot-password-container form .input-container, .container .verify-account-form .reset-password-container form .input-container, .container .verify-account-form .verify-account-container form .input-container {
+  width: 100%;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border: 1px solid #BDBDBD;
+  border-radius: 8px;
+  margin: 10px auto;
+  padding: 0 10px;
+}
+
+.container .register-form .register-container form .input-container input, .container .register-form .login-container form .input-container input, .container .register-form .forgot-password-container form .input-container input, .container .register-form .reset-password-container form .input-container input, .container .register-form .verify-account-container form .input-container input, .container .login-form .register-container form .input-container input, .container .login-form .login-container form .input-container input, .container .login-form .forgot-password-container form .input-container input, .container .login-form .reset-password-container form .input-container input, .container .login-form .verify-account-container form .input-container input, .container .forgot-password-form .register-container form .input-container input, .container .forgot-password-form .login-container form .input-container input, .container .forgot-password-form .forgot-password-container form .input-container input, .container .forgot-password-form .reset-password-container form .input-container input, .container .forgot-password-form .verify-account-container form .input-container input, .container .reset-password-form .register-container form .input-container input, .container .reset-password-form .login-container form .input-container input, .container .reset-password-form .forgot-password-container form .input-container input, .container .reset-password-form .reset-password-container form .input-container input, .container .reset-password-form .verify-account-container form .input-container input, .container .verify-account-form .register-container form .input-container input, .container .verify-account-form .login-container form .input-container input, .container .verify-account-form .forgot-password-container form .input-container input, .container .verify-account-form .reset-password-container form .input-container input, .container .verify-account-form .verify-account-container form .input-container input {
+  all: unset;
+  font-size: 16px;
+  color: #333333;
+  width: 100%;
+}
+
+.container .register-form .register-container form .input-container input:focus, .container .register-form .login-container form .input-container input:focus, .container .register-form .forgot-password-container form .input-container input:focus, .container .register-form .reset-password-container form .input-container input:focus, .container .register-form .verify-account-container form .input-container input:focus, .container .login-form .register-container form .input-container input:focus, .container .login-form .login-container form .input-container input:focus, .container .login-form .forgot-password-container form .input-container input:focus, .container .login-form .reset-password-container form .input-container input:focus, .container .login-form .verify-account-container form .input-container input:focus, .container .forgot-password-form .register-container form .input-container input:focus, .container .forgot-password-form .login-container form .input-container input:focus, .container .forgot-password-form .forgot-password-container form .input-container input:focus, .container .forgot-password-form .reset-password-container form .input-container input:focus, .container .forgot-password-form .verify-account-container form .input-container input:focus, .container .reset-password-form .register-container form .input-container input:focus, .container .reset-password-form .login-container form .input-container input:focus, .container .reset-password-form .forgot-password-container form .input-container input:focus, .container .reset-password-form .reset-password-container form .input-container input:focus, .container .reset-password-form .verify-account-container form .input-container input:focus, .container .verify-account-form .register-container form .input-container input:focus, .container .verify-account-form .login-container form .input-container input:focus, .container .verify-account-form .forgot-password-container form .input-container input:focus, .container .verify-account-form .reset-password-container form .input-container input:focus, .container .verify-account-form .verify-account-container form .input-container input:focus {
+  outline: none;
+}
+
+.container .register-form .register-container form .input-container input::-webkit-input-placeholder, .container .register-form .login-container form .input-container input::-webkit-input-placeholder, .container .register-form .forgot-password-container form .input-container input::-webkit-input-placeholder, .container .register-form .reset-password-container form .input-container input::-webkit-input-placeholder, .container .register-form .verify-account-container form .input-container input::-webkit-input-placeholder, .container .login-form .register-container form .input-container input::-webkit-input-placeholder, .container .login-form .login-container form .input-container input::-webkit-input-placeholder, .container .login-form .forgot-password-container form .input-container input::-webkit-input-placeholder, .container .login-form .reset-password-container form .input-container input::-webkit-input-placeholder, .container .login-form .verify-account-container form .input-container input::-webkit-input-placeholder, .container .forgot-password-form .register-container form .input-container input::-webkit-input-placeholder, .container .forgot-password-form .login-container form .input-container input::-webkit-input-placeholder, .container .forgot-password-form .forgot-password-container form .input-container input::-webkit-input-placeholder, .container .forgot-password-form .reset-password-container form .input-container input::-webkit-input-placeholder, .container .forgot-password-form .verify-account-container form .input-container input::-webkit-input-placeholder, .container .reset-password-form .register-container form .input-container input::-webkit-input-placeholder, .container .reset-password-form .login-container form .input-container input::-webkit-input-placeholder, .container .reset-password-form .forgot-password-container form .input-container input::-webkit-input-placeholder, .container .reset-password-form .reset-password-container form .input-container input::-webkit-input-placeholder, .container .reset-password-form .verify-account-container form .input-container input::-webkit-input-placeholder, .container .verify-account-form .register-container form .input-container input::-webkit-input-placeholder, .container .verify-account-form .login-container form .input-container input::-webkit-input-placeholder, .container .verify-account-form .forgot-password-container form .input-container input::-webkit-input-placeholder, .container .verify-account-form .reset-password-container form .input-container input::-webkit-input-placeholder, .container .verify-account-form .verify-account-container form .input-container input::-webkit-input-placeholder {
+  color: #828282;
+}
+
+.container .register-form .register-container form .input-container input:-ms-input-placeholder, .container .register-form .login-container form .input-container input:-ms-input-placeholder, .container .register-form .forgot-password-container form .input-container input:-ms-input-placeholder, .container .register-form .reset-password-container form .input-container input:-ms-input-placeholder, .container .register-form .verify-account-container form .input-container input:-ms-input-placeholder, .container .login-form .register-container form .input-container input:-ms-input-placeholder, .container .login-form .login-container form .input-container input:-ms-input-placeholder, .container .login-form .forgot-password-container form .input-container input:-ms-input-placeholder, .container .login-form .reset-password-container form .input-container input:-ms-input-placeholder, .container .login-form .verify-account-container form .input-container input:-ms-input-placeholder, .container .forgot-password-form .register-container form .input-container input:-ms-input-placeholder, .container .forgot-password-form .login-container form .input-container input:-ms-input-placeholder, .container .forgot-password-form .forgot-password-container form .input-container input:-ms-input-placeholder, .container .forgot-password-form .reset-password-container form .input-container input:-ms-input-placeholder, .container .forgot-password-form .verify-account-container form .input-container input:-ms-input-placeholder, .container .reset-password-form .register-container form .input-container input:-ms-input-placeholder, .container .reset-password-form .login-container form .input-container input:-ms-input-placeholder, .container .reset-password-form .forgot-password-container form .input-container input:-ms-input-placeholder, .container .reset-password-form .reset-password-container form .input-container input:-ms-input-placeholder, .container .reset-password-form .verify-account-container form .input-container input:-ms-input-placeholder, .container .verify-account-form .register-container form .input-container input:-ms-input-placeholder, .container .verify-account-form .login-container form .input-container input:-ms-input-placeholder, .container .verify-account-form .forgot-password-container form .input-container input:-ms-input-placeholder, .container .verify-account-form .reset-password-container form .input-container input:-ms-input-placeholder, .container .verify-account-form .verify-account-container form .input-container input:-ms-input-placeholder {
+  color: #828282;
+}
+
+.container .register-form .register-container form .input-container input::-ms-input-placeholder, .container .register-form .login-container form .input-container input::-ms-input-placeholder, .container .register-form .forgot-password-container form .input-container input::-ms-input-placeholder, .container .register-form .reset-password-container form .input-container input::-ms-input-placeholder, .container .register-form .verify-account-container form .input-container input::-ms-input-placeholder, .container .login-form .register-container form .input-container input::-ms-input-placeholder, .container .login-form .login-container form .input-container input::-ms-input-placeholder, .container .login-form .forgot-password-container form .input-container input::-ms-input-placeholder, .container .login-form .reset-password-container form .input-container input::-ms-input-placeholder, .container .login-form .verify-account-container form .input-container input::-ms-input-placeholder, .container .forgot-password-form .register-container form .input-container input::-ms-input-placeholder, .container .forgot-password-form .login-container form .input-container input::-ms-input-placeholder, .container .forgot-password-form .forgot-password-container form .input-container input::-ms-input-placeholder, .container .forgot-password-form .reset-password-container form .input-container input::-ms-input-placeholder, .container .forgot-password-form .verify-account-container form .input-container input::-ms-input-placeholder, .container .reset-password-form .register-container form .input-container input::-ms-input-placeholder, .container .reset-password-form .login-container form .input-container input::-ms-input-placeholder, .container .reset-password-form .forgot-password-container form .input-container input::-ms-input-placeholder, .container .reset-password-form .reset-password-container form .input-container input::-ms-input-placeholder, .container .reset-password-form .verify-account-container form .input-container input::-ms-input-placeholder, .container .verify-account-form .register-container form .input-container input::-ms-input-placeholder, .container .verify-account-form .login-container form .input-container input::-ms-input-placeholder, .container .verify-account-form .forgot-password-container form .input-container input::-ms-input-placeholder, .container .verify-account-form .reset-password-container form .input-container input::-ms-input-placeholder, .container .verify-account-form .verify-account-container form .input-container input::-ms-input-placeholder {
+  color: #828282;
+}
+
+.container .register-form .register-container form .input-container input::placeholder, .container .register-form .login-container form .input-container input::placeholder, .container .register-form .forgot-password-container form .input-container input::placeholder, .container .register-form .reset-password-container form .input-container input::placeholder, .container .register-form .verify-account-container form .input-container input::placeholder, .container .login-form .register-container form .input-container input::placeholder, .container .login-form .login-container form .input-container input::placeholder, .container .login-form .forgot-password-container form .input-container input::placeholder, .container .login-form .reset-password-container form .input-container input::placeholder, .container .login-form .verify-account-container form .input-container input::placeholder, .container .forgot-password-form .register-container form .input-container input::placeholder, .container .forgot-password-form .login-container form .input-container input::placeholder, .container .forgot-password-form .forgot-password-container form .input-container input::placeholder, .container .forgot-password-form .reset-password-container form .input-container input::placeholder, .container .forgot-password-form .verify-account-container form .input-container input::placeholder, .container .reset-password-form .register-container form .input-container input::placeholder, .container .reset-password-form .login-container form .input-container input::placeholder, .container .reset-password-form .forgot-password-container form .input-container input::placeholder, .container .reset-password-form .reset-password-container form .input-container input::placeholder, .container .reset-password-form .verify-account-container form .input-container input::placeholder, .container .verify-account-form .register-container form .input-container input::placeholder, .container .verify-account-form .login-container form .input-container input::placeholder, .container .verify-account-form .forgot-password-container form .input-container input::placeholder, .container .verify-account-form .reset-password-container form .input-container input::placeholder, .container .verify-account-form .verify-account-container form .input-container input::placeholder {
+  color: #828282;
+}
+
+.container .register-form .register-container form button, .container .register-form .login-container form button, .container .register-form .forgot-password-container form button, .container .register-form .reset-password-container form button, .container .register-form .verify-account-container form button, .container .login-form .register-container form button, .container .login-form .login-container form button, .container .login-form .forgot-password-container form button, .container .login-form .reset-password-container form button, .container .login-form .verify-account-container form button, .container .forgot-password-form .register-container form button, .container .forgot-password-form .login-container form button, .container .forgot-password-form .forgot-password-container form button, .container .forgot-password-form .reset-password-container form button, .container .forgot-password-form .verify-account-container form button, .container .reset-password-form .register-container form button, .container .reset-password-form .login-container form button, .container .reset-password-form .forgot-password-container form button, .container .reset-password-form .reset-password-container form button, .container .reset-password-form .verify-account-container form button, .container .verify-account-form .register-container form button, .container .verify-account-form .login-container form button, .container .verify-account-form .forgot-password-container form button, .container .verify-account-form .reset-password-container form button, .container .verify-account-form .verify-account-container form button {
+  background-color: #2F80ED;
+  border-radius: 8px;
+  border: none;
+  color: #FFFFFF;
+  height: 38px;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  -webkit-transition: background-color 0.1s ease-in, -webkit-transform 0.35s ease-out;
+  transition: background-color 0.1s ease-in, -webkit-transform 0.35s ease-out;
+  transition: transform 0.35s ease-out, background-color 0.1s ease-in;
+  transition: transform 0.35s ease-out, background-color 0.1s ease-in, -webkit-transform 0.35s ease-out;
+}
+
+.container .register-form .register-container form button:hover, .container .register-form .login-container form button:hover, .container .register-form .forgot-password-container form button:hover, .container .register-form .reset-password-container form button:hover, .container .register-form .verify-account-container form button:hover, .container .login-form .register-container form button:hover, .container .login-form .login-container form button:hover, .container .login-form .forgot-password-container form button:hover, .container .login-form .reset-password-container form button:hover, .container .login-form .verify-account-container form button:hover, .container .forgot-password-form .register-container form button:hover, .container .forgot-password-form .login-container form button:hover, .container .forgot-password-form .forgot-password-container form button:hover, .container .forgot-password-form .reset-password-container form button:hover, .container .forgot-password-form .verify-account-container form button:hover, .container .reset-password-form .register-container form button:hover, .container .reset-password-form .login-container form button:hover, .container .reset-password-form .forgot-password-container form button:hover, .container .reset-password-form .reset-password-container form button:hover, .container .reset-password-form .verify-account-container form button:hover, .container .verify-account-form .register-container form button:hover, .container .verify-account-form .login-container form button:hover, .container .verify-account-form .forgot-password-container form button:hover, .container .verify-account-form .reset-password-container form button:hover, .container .verify-account-form .verify-account-container form button:hover {
+  background-color: #3279d6;
+}
+
+.container .register-form .register-container form button:active, .container .register-form .login-container form button:active, .container .register-form .forgot-password-container form button:active, .container .register-form .reset-password-container form button:active, .container .register-form .verify-account-container form button:active, .container .login-form .register-container form button:active, .container .login-form .login-container form button:active, .container .login-form .forgot-password-container form button:active, .container .login-form .reset-password-container form button:active, .container .login-form .verify-account-container form button:active, .container .forgot-password-form .register-container form button:active, .container .forgot-password-form .login-container form button:active, .container .forgot-password-form .forgot-password-container form button:active, .container .forgot-password-form .reset-password-container form button:active, .container .forgot-password-form .verify-account-container form button:active, .container .reset-password-form .register-container form button:active, .container .reset-password-form .login-container form button:active, .container .reset-password-form .forgot-password-container form button:active, .container .reset-password-form .reset-password-container form button:active, .container .reset-password-form .verify-account-container form button:active, .container .verify-account-form .register-container form button:active, .container .verify-account-form .login-container form button:active, .container .verify-account-form .forgot-password-container form button:active, .container .verify-account-form .reset-password-container form button:active, .container .verify-account-form .verify-account-container form button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.container .register-form .register-container p, .container .register-form .login-container p, .container .register-form .forgot-password-container p, .container .register-form .reset-password-container p, .container .register-form .verify-account-container p, .container .login-form .register-container p, .container .login-form .login-container p, .container .login-form .forgot-password-container p, .container .login-form .reset-password-container p, .container .login-form .verify-account-container p, .container .forgot-password-form .register-container p, .container .forgot-password-form .login-container p, .container .forgot-password-form .forgot-password-container p, .container .forgot-password-form .reset-password-container p, .container .forgot-password-form .verify-account-container p, .container .reset-password-form .register-container p, .container .reset-password-form .login-container p, .container .reset-password-form .forgot-password-container p, .container .reset-password-form .reset-password-container p, .container .reset-password-form .verify-account-container p, .container .verify-account-form .register-container p, .container .verify-account-form .login-container p, .container .verify-account-form .forgot-password-container p, .container .verify-account-form .reset-password-container p, .container .verify-account-form .verify-account-container p {
+  color: #828282;
+  font-size: 14px;
+  text-align: center;
+}
+
+.container .register-form .register-container .navigate-link, .container .register-form .login-container .navigate-link, .container .register-form .forgot-password-container .navigate-link, .container .register-form .reset-password-container .navigate-link, .container .register-form .verify-account-container .navigate-link, .container .login-form .register-container .navigate-link, .container .login-form .login-container .navigate-link, .container .login-form .forgot-password-container .navigate-link, .container .login-form .reset-password-container .navigate-link, .container .login-form .verify-account-container .navigate-link, .container .forgot-password-form .register-container .navigate-link, .container .forgot-password-form .login-container .navigate-link, .container .forgot-password-form .forgot-password-container .navigate-link, .container .forgot-password-form .reset-password-container .navigate-link, .container .forgot-password-form .verify-account-container .navigate-link, .container .reset-password-form .register-container .navigate-link, .container .reset-password-form .login-container .navigate-link, .container .reset-password-form .forgot-password-container .navigate-link, .container .reset-password-form .reset-password-container .navigate-link, .container .reset-password-form .verify-account-container .navigate-link, .container .verify-account-form .register-container .navigate-link, .container .verify-account-form .login-container .navigate-link, .container .verify-account-form .forgot-password-container .navigate-link, .container .verify-account-form .reset-password-container .navigate-link, .container .verify-account-form .verify-account-container .navigate-link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #039be5;
+  text-align: start;
+}
+
+.container .register-form .register-container .navigate-link.forgot, .container .register-form .login-container .navigate-link.forgot, .container .register-form .forgot-password-container .navigate-link.forgot, .container .register-form .reset-password-container .navigate-link.forgot, .container .register-form .verify-account-container .navigate-link.forgot, .container .login-form .register-container .navigate-link.forgot, .container .login-form .login-container .navigate-link.forgot, .container .login-form .forgot-password-container .navigate-link.forgot, .container .login-form .reset-password-container .navigate-link.forgot, .container .login-form .verify-account-container .navigate-link.forgot, .container .forgot-password-form .register-container .navigate-link.forgot, .container .forgot-password-form .login-container .navigate-link.forgot, .container .forgot-password-form .forgot-password-container .navigate-link.forgot, .container .forgot-password-form .reset-password-container .navigate-link.forgot, .container .forgot-password-form .verify-account-container .navigate-link.forgot, .container .reset-password-form .register-container .navigate-link.forgot, .container .reset-password-form .login-container .navigate-link.forgot, .container .reset-password-form .forgot-password-container .navigate-link.forgot, .container .reset-password-form .reset-password-container .navigate-link.forgot, .container .reset-password-form .verify-account-container .navigate-link.forgot, .container .verify-account-form .register-container .navigate-link.forgot, .container .verify-account-form .login-container .navigate-link.forgot, .container .verify-account-form .forgot-password-container .navigate-link.forgot, .container .verify-account-form .reset-password-container .navigate-link.forgot, .container .verify-account-form .verify-account-container .navigate-link.forgot {
+  margin-top: 0;
+}
+
+.container .register-form .register-container .back-to-login-container, .container .register-form .login-container .back-to-login-container, .container .register-form .forgot-password-container .back-to-login-container, .container .register-form .reset-password-container .back-to-login-container, .container .register-form .verify-account-container .back-to-login-container, .container .login-form .register-container .back-to-login-container, .container .login-form .login-container .back-to-login-container, .container .login-form .forgot-password-container .back-to-login-container, .container .login-form .reset-password-container .back-to-login-container, .container .login-form .verify-account-container .back-to-login-container, .container .forgot-password-form .register-container .back-to-login-container, .container .forgot-password-form .login-container .back-to-login-container, .container .forgot-password-form .forgot-password-container .back-to-login-container, .container .forgot-password-form .reset-password-container .back-to-login-container, .container .forgot-password-form .verify-account-container .back-to-login-container, .container .reset-password-form .register-container .back-to-login-container, .container .reset-password-form .login-container .back-to-login-container, .container .reset-password-form .forgot-password-container .back-to-login-container, .container .reset-password-form .reset-password-container .back-to-login-container, .container .reset-password-form .verify-account-container .back-to-login-container, .container .verify-account-form .register-container .back-to-login-container, .container .verify-account-form .login-container .back-to-login-container, .container .verify-account-form .forgot-password-container .back-to-login-container, .container .verify-account-form .reset-password-container .back-to-login-container, .container .verify-account-form .verify-account-container .back-to-login-container {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .register-form .register-container .back-to-login-container .navigate-link, .container .register-form .login-container .back-to-login-container .navigate-link, .container .register-form .forgot-password-container .back-to-login-container .navigate-link, .container .register-form .reset-password-container .back-to-login-container .navigate-link, .container .register-form .verify-account-container .back-to-login-container .navigate-link, .container .login-form .register-container .back-to-login-container .navigate-link, .container .login-form .login-container .back-to-login-container .navigate-link, .container .login-form .forgot-password-container .back-to-login-container .navigate-link, .container .login-form .reset-password-container .back-to-login-container .navigate-link, .container .login-form .verify-account-container .back-to-login-container .navigate-link, .container .forgot-password-form .register-container .back-to-login-container .navigate-link, .container .forgot-password-form .login-container .back-to-login-container .navigate-link, .container .forgot-password-form .forgot-password-container .back-to-login-container .navigate-link, .container .forgot-password-form .reset-password-container .back-to-login-container .navigate-link, .container .forgot-password-form .verify-account-container .back-to-login-container .navigate-link, .container .reset-password-form .register-container .back-to-login-container .navigate-link, .container .reset-password-form .login-container .back-to-login-container .navigate-link, .container .reset-password-form .forgot-password-container .back-to-login-container .navigate-link, .container .reset-password-form .reset-password-container .back-to-login-container .navigate-link, .container .reset-password-form .verify-account-container .back-to-login-container .navigate-link, .container .verify-account-form .register-container .back-to-login-container .navigate-link, .container .verify-account-form .login-container .back-to-login-container .navigate-link, .container .verify-account-form .forgot-password-container .back-to-login-container .navigate-link, .container .verify-account-form .reset-password-container .back-to-login-container .navigate-link, .container .verify-account-form .verify-account-container .back-to-login-container .navigate-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.container .register-form .register-container .icons-container, .container .register-form .login-container .icons-container, .container .register-form .forgot-password-container .icons-container, .container .register-form .reset-password-container .icons-container, .container .register-form .verify-account-container .icons-container, .container .login-form .register-container .icons-container, .container .login-form .login-container .icons-container, .container .login-form .forgot-password-container .icons-container, .container .login-form .reset-password-container .icons-container, .container .login-form .verify-account-container .icons-container, .container .forgot-password-form .register-container .icons-container, .container .forgot-password-form .login-container .icons-container, .container .forgot-password-form .forgot-password-container .icons-container, .container .forgot-password-form .reset-password-container .icons-container, .container .forgot-password-form .verify-account-container .icons-container, .container .reset-password-form .register-container .icons-container, .container .reset-password-form .login-container .icons-container, .container .reset-password-form .forgot-password-container .icons-container, .container .reset-password-form .reset-password-container .icons-container, .container .reset-password-form .verify-account-container .icons-container, .container .verify-account-form .register-container .icons-container, .container .verify-account-form .login-container .icons-container, .container .verify-account-form .forgot-password-container .icons-container, .container .verify-account-form .reset-password-container .icons-container, .container .verify-account-form .verify-account-container .icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+}
+
+.container .register-form .register-container .icons-container img, .container .register-form .login-container .icons-container img, .container .register-form .forgot-password-container .icons-container img, .container .register-form .reset-password-container .icons-container img, .container .register-form .verify-account-container .icons-container img, .container .login-form .register-container .icons-container img, .container .login-form .login-container .icons-container img, .container .login-form .forgot-password-container .icons-container img, .container .login-form .reset-password-container .icons-container img, .container .login-form .verify-account-container .icons-container img, .container .forgot-password-form .register-container .icons-container img, .container .forgot-password-form .login-container .icons-container img, .container .forgot-password-form .forgot-password-container .icons-container img, .container .forgot-password-form .reset-password-container .icons-container img, .container .forgot-password-form .verify-account-container .icons-container img, .container .reset-password-form .register-container .icons-container img, .container .reset-password-form .login-container .icons-container img, .container .reset-password-form .forgot-password-container .icons-container img, .container .reset-password-form .reset-password-container .icons-container img, .container .reset-password-form .verify-account-container .icons-container img, .container .verify-account-form .register-container .icons-container img, .container .verify-account-form .login-container .icons-container img, .container .verify-account-form .forgot-password-container .icons-container img, .container .verify-account-form .reset-password-container .icons-container img, .container .verify-account-form .verify-account-container .icons-container img {
+  cursor: pointer;
+}
+
+.container .edit-info-container nav {
+  margin-top: 8px;
+}
+
+.container .dashboard-container, .container .edit-info-container {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .dashboard-container nav, .container .edit-info-container nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+}
+
+.container .dashboard-container nav .logo-container, .container .edit-info-container nav .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-left: 6.3vw;
+  font-size: Min(14px, 3.5vw);
+  color: #333333;
+}
+
+.container .dashboard-container nav .logo-container img, .container .edit-info-container nav .logo-container img {
+  width: 30px;
+  height: 30px;
+}
+
+.container .dashboard-container nav .user-container, .container .edit-info-container nav .user-container {
+  margin-right: 6.3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: Min(200px, 32vw);
+  gap: 10px;
+  color: #333333;
+  position: relative;
+}
+
+.container .dashboard-container nav .user-container h3, .container .edit-info-container nav .user-container h3 {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.container .dashboard-container nav .user-container img, .container .edit-info-container nav .user-container img {
+  width: 35px;
+  height: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+
+.container .dashboard-container nav .user-container .popup-menu-btn, .container .edit-info-container nav .user-container .popup-menu-btn {
+  cursor: pointer;
+}
+
+.container .dashboard-container nav .user-container .popup-menu-container, .container .edit-info-container nav .user-container .popup-menu-container {
+  z-index: 10;
+  position: absolute;
+  background: #FFFFFF;
+  top: 60px;
+  left: 0;
+  width: 188px;
+  border: 1px solid #E0E0E0;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+  display: none;
+}
+
+.container .dashboard-container nav .user-container .popup-menu-container .logout, .container .edit-info-container nav .user-container .popup-menu-container .logout {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .dashboard-container nav .user-container .popup-menu-container .logout > *:first-child, .container .edit-info-container nav .user-container .popup-menu-container .logout > *:first-child {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.container .dashboard-container nav .user-container .popup-menu-container .logout > *:last-child, .container .edit-info-container nav .user-container .popup-menu-container .logout > *:last-child {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+  margin: 15px 0;
+}
+
+.container .dashboard-container nav .user-container .popup-menu-container .logout:hover, .container .edit-info-container nav .user-container .popup-menu-container .logout:hover {
+  background: #F2F2F2;
+  border-radius: 8px;
+}
+
+.container .dashboard-container nav .user-container .popup-menu-container.show, .container .edit-info-container nav .user-container .popup-menu-container.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .dashboard-container .personal-info-section, .container .edit-info-container .personal-info-section {
+  margin-top: -10px;
+  margin-bottom: 50px;
+}
+
+.container .dashboard-container .personal-info-section h1, .container .edit-info-container .personal-info-section h1 {
+  font-size: Min(36px, 6vw);
+  line-height: 49px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container .dashboard-container .personal-info-section h3, .container .edit-info-container .personal-info-section h3 {
+  font-size: Min(18px, 4vw);
+  line-height: 25px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.container .dashboard-container .personal-info-section .personal-info-container, .container .edit-info-container .personal-info-section .personal-info-container {
+  background-color: white;
+  border: 1px solid #E0E0E0;
+  border-radius: 12px;
+  width: Min(780px, 85vw);
+  margin-top: 40px;
+}
+
+.container .dashboard-container .personal-info-section .personal-info-container > div, .container .edit-info-container .personal-info-section .personal-info-container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .dashboard-container .personal-info-section .personal-info-container > div:not(:last-child), .container .edit-info-container .personal-info-section .personal-info-container > div:not(:last-child) {
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.container .dashboard-container .personal-info-section .personal-info-container .header .description, .container .edit-info-container .personal-info-section .personal-info-container .header .description {
+  margin-left: 50px;
+}
+
+.container .dashboard-container .personal-info-section .personal-info-container .header .description h4, .container .edit-info-container .personal-info-section .personal-info-container .header .description h4 {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: normal;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.container .dashboard-container .personal-info-section .personal-info-container .header .description p, .container .edit-info-container .personal-info-section .personal-info-container .header .description p {
+  font-size: 13px;
+  line-height: 18px;
+  color: #828282;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.container .dashboard-container .personal-info-section .personal-info-container .header button, .container .edit-info-container .personal-info-section .personal-info-container .header button {
+  border: 1px solid #828282;
+  border-radius: 12px;
+  color: #828282;
+  width: 95px;
+  height: 38px;
+  font-size: 16px;
+  background: white;
+  margin-right: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.container .dashboard-container .personal-info-section .personal-info-container .header button:hover, .container .edit-info-container .personal-info-section .personal-info-container .header button:hover {
+  color: white;
+  background: #bab9b9;
+}
+
+.container .dashboard-container .personal-info-section .personal-info-container .header button:active, .container .edit-info-container .personal-info-section .personal-info-container .header button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.container .dashboard-container .personal-info-section .personal-info-container > div:not(:first-child), .container .edit-info-container .personal-info-section .personal-info-container > div:not(:first-child) {
+  margin: 5px auto;
+}
+
+.container .dashboard-container .personal-info-section .personal-info-container > div:not(:first-child) > *:first-child, .container .edit-info-container .personal-info-section .personal-info-container > div:not(:first-child) > *:first-child {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  margin-left: 50px;
+  color: #BDBDBD;
+}
+
+.container .dashboard-container .personal-info-section .personal-info-container > div:not(:first-child) > *:last-child, .container .edit-info-container .personal-info-section .personal-info-container > div:not(:first-child) > *:last-child {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+  color: #333333;
+}
+
+.container .dashboard-container .personal-info-section .personal-info-container > div:not(:first-child) h5, .container .edit-info-container .personal-info-section .personal-info-container > div:not(:first-child) h5 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.container .dashboard-container .personal-info-section .personal-info-container > div:not(:first-child) h5.photo, .container .edit-info-container .personal-info-section .personal-info-container > div:not(:first-child) h5.photo {
+  margin: 10px auto;
+}
+
+.container .dashboard-container .personal-info-section .personal-info-container > div:not(:first-child) img, .container .edit-info-container .personal-info-section .personal-info-container > div:not(:first-child) img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .dashboard-container .edit-info-section, .container .edit-info-container .edit-info-section {
+  width: Min(780px, 85vw);
+  margin: 20px auto 50px auto;
+}
+
+.container .dashboard-container .edit-info-section .back-to-dashboard-container, .container .edit-info-container .edit-info-section .back-to-dashboard-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.container .dashboard-container .edit-info-section .back-to-dashboard-container p, .container .edit-info-container .edit-info-section .back-to-dashboard-container p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2D9CDB;
+}
+
+.container .dashboard-container .edit-info-section .back-to-dashboard-container p span, .container .edit-info-container .edit-info-section .back-to-dashboard-container p span {
+  margin-left: 10px;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container, .container .edit-info-container .edit-info-section .edit-info-form-container {
+  background-color: white;
+  border: 1px solid #E0E0E0;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container h3, .container .edit-info-container .edit-info-section .edit-info-form-container h3 {
+  font-size: Min(24px, 5.5vw);
+  line-height: 33px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container p, .container .edit-info-container .edit-info-section .edit-info-form-container p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.035em;
+  color: #828282;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form, .container .edit-info-container .edit-info-section .edit-info-form-container form {
+  margin-top: 40px;
+  position: relative;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container.photo, .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container.photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container.photo input, .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container.photo input {
+  opacity: 0;
+  height: 0;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container.photo label, .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container.photo label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #828282;
+  border-radius: 8px;
+  width: 80px;
+  min-width: 80px;
+  height: 80px;
+  font-size: 150%;
+  color: #828282;
+  cursor: pointer;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container.photo img, .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container.photo img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container.photo p, .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container.photo p {
+  position: absolute;
+  left: 110px;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child), .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  margin: 20px auto;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) label, .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.035em;
+  color: #4F4F4F;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) input, .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) input {
+  width: 60%;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  height: 50px;
+  padding: 0 20px;
+  outline: none;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) input::-webkit-input-placeholder, .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) input:-ms-input-placeholder, .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) input::-ms-input-placeholder, .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) input::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) input::placeholder, .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) input::placeholder {
+  color: #BDBDBD;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) textarea, .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) textarea {
+  width: 60%;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  height: 90px;
+  padding: 15px 20px;
+  outline: none;
+  resize: none;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) textarea::-webkit-input-placeholder, .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) textarea::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) textarea:-ms-input-placeholder, .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) textarea:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) textarea::-ms-input-placeholder, .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) textarea::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) textarea::placeholder, .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) textarea::placeholder {
+  color: #BDBDBD;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form button, .container .edit-info-container .edit-info-section .edit-info-form-container form button {
+  width: 82px;
+  height: 38px;
+  background: #2F80ED;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+  border: none;
+  margin: 10px auto;
+  cursor: pointer;
+  -webkit-transition: background-color 0.1s ease-in, -webkit-transform 0.35s ease-out;
+  transition: background-color 0.1s ease-in, -webkit-transform 0.35s ease-out;
+  transition: transform 0.35s ease-out, background-color 0.1s ease-in;
+  transition: transform 0.35s ease-out, background-color 0.1s ease-in, -webkit-transform 0.35s ease-out;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form button:hover, .container .edit-info-container .edit-info-section .edit-info-form-container form button:hover {
+  background-color: #3279d6;
+}
+
+.container .dashboard-container .edit-info-section .edit-info-form-container form button:active, .container .edit-info-container .edit-info-section .edit-info-form-container form button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+@media (max-width: 470px) {
+  .container {
+    background-color: white;
+  }
+  .container .register-form, .container .login-form, .container .forgot-password-form, .container .reset-password-form, .container .verify-account-form {
+    width: 90%;
+    border: none;
+  }
+  .container .register-form .register-container, .container .register-form .login-container, .container .register-form .forgot-password-container, .container .register-form .reset-password-container, .container .register-form .verify-account-container, .container .login-form .register-container, .container .login-form .login-container, .container .login-form .forgot-password-container, .container .login-form .reset-password-container, .container .login-form .verify-account-container, .container .forgot-password-form .register-container, .container .forgot-password-form .login-container, .container .forgot-password-form .forgot-password-container, .container .forgot-password-form .reset-password-container, .container .forgot-password-form .verify-account-container, .container .reset-password-form .register-container, .container .reset-password-form .login-container, .container .reset-password-form .forgot-password-container, .container .reset-password-form .reset-password-container, .container .reset-password-form .verify-account-container, .container .verify-account-form .register-container, .container .verify-account-form .login-container, .container .verify-account-form .forgot-password-container, .container .verify-account-form .reset-password-container, .container .verify-account-form .verify-account-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .register-form .register-container .register-description, .container .register-form .register-container .forgot-password-description, .container .register-form .register-container .reset-password-description, .container .register-form .register-container .resend-email-description, .container .register-form .login-container .register-description, .container .register-form .login-container .forgot-password-description, .container .register-form .login-container .reset-password-description, .container .register-form .login-container .resend-email-description, .container .register-form .forgot-password-container .register-description, .container .register-form .forgot-password-container .forgot-password-description, .container .register-form .forgot-password-container .reset-password-description, .container .register-form .forgot-password-container .resend-email-description, .container .register-form .reset-password-container .register-description, .container .register-form .reset-password-container .forgot-password-description, .container .register-form .reset-password-container .reset-password-description, .container .register-form .reset-password-container .resend-email-description, .container .register-form .verify-account-container .register-description, .container .register-form .verify-account-container .forgot-password-description, .container .register-form .verify-account-container .reset-password-description, .container .register-form .verify-account-container .resend-email-description, .container .login-form .register-container .register-description, .container .login-form .register-container .forgot-password-description, .container .login-form .register-container .reset-password-description, .container .login-form .register-container .resend-email-description, .container .login-form .login-container .register-description, .container .login-form .login-container .forgot-password-description, .container .login-form .login-container .reset-password-description, .container .login-form .login-container .resend-email-description, .container .login-form .forgot-password-container .register-description, .container .login-form .forgot-password-container .forgot-password-description, .container .login-form .forgot-password-container .reset-password-description, .container .login-form .forgot-password-container .resend-email-description, .container .login-form .reset-password-container .register-description, .container .login-form .reset-password-container .forgot-password-description, .container .login-form .reset-password-container .reset-password-description, .container .login-form .reset-password-container .resend-email-description, .container .login-form .verify-account-container .register-description, .container .login-form .verify-account-container .forgot-password-description, .container .login-form .verify-account-container .reset-password-description, .container .login-form .verify-account-container .resend-email-description, .container .forgot-password-form .register-container .register-description, .container .forgot-password-form .register-container .forgot-password-description, .container .forgot-password-form .register-container .reset-password-description, .container .forgot-password-form .register-container .resend-email-description, .container .forgot-password-form .login-container .register-description, .container .forgot-password-form .login-container .forgot-password-description, .container .forgot-password-form .login-container .reset-password-description, .container .forgot-password-form .login-container .resend-email-description, .container .forgot-password-form .forgot-password-container .register-description, .container .forgot-password-form .forgot-password-container .forgot-password-description, .container .forgot-password-form .forgot-password-container .reset-password-description, .container .forgot-password-form .forgot-password-container .resend-email-description, .container .forgot-password-form .reset-password-container .register-description, .container .forgot-password-form .reset-password-container .forgot-password-description, .container .forgot-password-form .reset-password-container .reset-password-description, .container .forgot-password-form .reset-password-container .resend-email-description, .container .forgot-password-form .verify-account-container .register-description, .container .forgot-password-form .verify-account-container .forgot-password-description, .container .forgot-password-form .verify-account-container .reset-password-description, .container .forgot-password-form .verify-account-container .resend-email-description, .container .reset-password-form .register-container .register-description, .container .reset-password-form .register-container .forgot-password-description, .container .reset-password-form .register-container .reset-password-description, .container .reset-password-form .register-container .resend-email-description, .container .reset-password-form .login-container .register-description, .container .reset-password-form .login-container .forgot-password-description, .container .reset-password-form .login-container .reset-password-description, .container .reset-password-form .login-container .resend-email-description, .container .reset-password-form .forgot-password-container .register-description, .container .reset-password-form .forgot-password-container .forgot-password-description, .container .reset-password-form .forgot-password-container .reset-password-description, .container .reset-password-form .forgot-password-container .resend-email-description, .container .reset-password-form .reset-password-container .register-description, .container .reset-password-form .reset-password-container .forgot-password-description, .container .reset-password-form .reset-password-container .reset-password-description, .container .reset-password-form .reset-password-container .resend-email-description, .container .reset-password-form .verify-account-container .register-description, .container .reset-password-form .verify-account-container .forgot-password-description, .container .reset-password-form .verify-account-container .reset-password-description, .container .reset-password-form .verify-account-container .resend-email-description, .container .verify-account-form .register-container .register-description, .container .verify-account-form .register-container .forgot-password-description, .container .verify-account-form .register-container .reset-password-description, .container .verify-account-form .register-container .resend-email-description, .container .verify-account-form .login-container .register-description, .container .verify-account-form .login-container .forgot-password-description, .container .verify-account-form .login-container .reset-password-description, .container .verify-account-form .login-container .resend-email-description, .container .verify-account-form .forgot-password-container .register-description, .container .verify-account-form .forgot-password-container .forgot-password-description, .container .verify-account-form .forgot-password-container .reset-password-description, .container .verify-account-form .forgot-password-container .resend-email-description, .container .verify-account-form .reset-password-container .register-description, .container .verify-account-form .reset-password-container .forgot-password-description, .container .verify-account-form .reset-password-container .reset-password-description, .container .verify-account-form .reset-password-container .resend-email-description, .container .verify-account-form .verify-account-container .register-description, .container .verify-account-form .verify-account-container .forgot-password-description, .container .verify-account-form .verify-account-container .reset-password-description, .container .verify-account-form .verify-account-container .resend-email-description {
+    margin-top: 0;
+  }
+  .container .register-form .register-container .icons-container, .container .register-form .login-container .icons-container, .container .register-form .forgot-password-container .icons-container, .container .register-form .reset-password-container .icons-container, .container .register-form .verify-account-container .icons-container, .container .login-form .register-container .icons-container, .container .login-form .login-container .icons-container, .container .login-form .forgot-password-container .icons-container, .container .login-form .reset-password-container .icons-container, .container .login-form .verify-account-container .icons-container, .container .forgot-password-form .register-container .icons-container, .container .forgot-password-form .login-container .icons-container, .container .forgot-password-form .forgot-password-container .icons-container, .container .forgot-password-form .reset-password-container .icons-container, .container .forgot-password-form .verify-account-container .icons-container, .container .reset-password-form .register-container .icons-container, .container .reset-password-form .login-container .icons-container, .container .reset-password-form .forgot-password-container .icons-container, .container .reset-password-form .reset-password-container .icons-container, .container .reset-password-form .verify-account-container .icons-container, .container .verify-account-form .register-container .icons-container, .container .verify-account-form .login-container .icons-container, .container .verify-account-form .forgot-password-container .icons-container, .container .verify-account-form .reset-password-container .icons-container, .container .verify-account-form .verify-account-container .icons-container {
+    margin: 0 auto;
+  }
+  .container .dashboard-container nav .user-container, .container .edit-info-container nav .user-container {
+    margin-right: 0;
+  }
+  .container .dashboard-container nav .user-container h3, .container .edit-info-container nav .user-container h3 {
+    display: none;
+  }
+  .container .dashboard-container nav .user-container .popup-menu-container, .container .edit-info-container nav .user-container .popup-menu-container {
+    width: 30vw;
+    left: -5vw;
+  }
+  .container .dashboard-container nav .user-container .popup-menu-container .my-profile > :last-child, .container .dashboard-container nav .user-container .popup-menu-container .logout > :last-child, .container .edit-info-container nav .user-container .popup-menu-container .my-profile > :last-child, .container .edit-info-container nav .user-container .popup-menu-container .logout > :last-child {
+    font-size: 3vw;
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+  }
+  .container .dashboard-container .personal-info-section, .container .edit-info-container .personal-info-section {
+    margin-top: 20px;
+  }
+  .container .dashboard-container .personal-info-section h1, .container .edit-info-container .personal-info-section h1 {
+    margin-bottom: 0;
+  }
+  .container .dashboard-container .personal-info-section h3, .container .edit-info-container .personal-info-section h3 {
+    margin: 0 auto;
+  }
+  .container .dashboard-container .personal-info-section .personal-info-container, .container .edit-info-container .personal-info-section .personal-info-container {
+    width: 100vw;
+    border: none;
+    margin-top: 35px;
+  }
+  .container .dashboard-container .personal-info-section .personal-info-container .header .description, .container .edit-info-container .personal-info-section .personal-info-container .header .description {
+    margin-left: 30px;
+    width: 50vw;
+  }
+  .container .dashboard-container .personal-info-section .personal-info-container .header .description h4, .container .edit-info-container .personal-info-section .personal-info-container .header .description h4 {
+    margin-top: 0;
+  }
+  .container .dashboard-container .personal-info-section .personal-info-container .header .description p, .container .edit-info-container .personal-info-section .personal-info-container .header .description p {
+    margin-bottom: 0;
+  }
+  .container .dashboard-container .personal-info-section .personal-info-container .header button, .container .edit-info-container .personal-info-section .personal-info-container .header button {
+    margin-right: 25px;
+  }
+  .container .dashboard-container .personal-info-section .personal-info-container > div:first-child, .container .edit-info-container .personal-info-section .personal-info-container > div:first-child {
+    border-bottom: none;
+  }
+  .container .dashboard-container .personal-info-section .personal-info-container > div:not(:first-child) > *:first-child, .container .edit-info-container .personal-info-section .personal-info-container > div:not(:first-child) > *:first-child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-left: 30px;
+  }
+  .container .dashboard-container .personal-info-section .personal-info-container > div:not(:first-child) > *:last-child, .container .edit-info-container .personal-info-section .personal-info-container > div:not(:first-child) > *:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    margin-right: 30px;
+  }
+  .container .dashboard-container .personal-info-section .personal-info-container > div:not(:first-child) h5.photo, .container .edit-info-container .personal-info-section .personal-info-container > div:not(:first-child) h5.photo {
+    margin-right: 30px;
+  }
+  .container .dashboard-container .personal-info-section .personal-info-container > div:nth-child(4n), .container .edit-info-container .personal-info-section .personal-info-container > div:nth-child(4n) {
+    height: 65px;
+  }
+  .container .dashboard-container .personal-info-section .personal-info-container > div:nth-child(4n) > *:last-child, .container .edit-info-container .personal-info-section .personal-info-container > div:nth-child(4n) > *:last-child {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .container .dashboard-container .edit-info-section, .container .edit-info-container .edit-info-section {
+    width: 100vw;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .container .dashboard-container .edit-info-section .back-to-dashboard-container, .container .edit-info-container .edit-info-section .back-to-dashboard-container {
+    margin-left: 40px;
+  }
+  .container .dashboard-container .edit-info-section .edit-info-form-container, .container .edit-info-container .edit-info-section .edit-info-form-container {
+    border: none;
+    padding: 10px 40px;
+  }
+  .container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) input, .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) input {
+    width: 100%;
+  }
+  .container .dashboard-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) textarea, .container .edit-info-container .edit-info-section .edit-info-form-container form > .input-container:not(:first-child) textarea {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
